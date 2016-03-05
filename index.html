@@ -164,8 +164,10 @@
 
         }
 
-        $(".image").on("swipe",function(){
-            $(this).hide();
+        $(document).on("pagecreate",".image",function(){
+            $("img").on("swipe",function(){
+                $(this).hide();
+            });
         });
 
         function nextsong() {
