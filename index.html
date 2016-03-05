@@ -4,6 +4,9 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600|Montserrat' rel='stylesheet' type='text/css'>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 
+
+
+
     <meta charset="UTF-8">
     <title>YosYur Escape</title>
     <style>
@@ -68,6 +71,10 @@
 </head>
 
 <body>
+
+
+
+
 
 <div class="wrap">
 <h4><span style="color:lightyellow; font-weight: 500;"><b>DOWN THE MEMORY LANE:</b></span><br>Yossi's and Yuri's Nostalgic Collection</h4>
@@ -164,10 +171,16 @@
 
         }
 
+        $(document).ready(function(){
+            $(".maingif").click(function(){
+                location.reload();
+            });
+        });
 
-        function nextsong() {
+       /* function nextsong() {
             window.location.reload(); // This is not jQuery but simple plain ol' JS
         }
+        */
     </script>
 <img src="http://orig06.deviantart.net/f805/f/2013/001/d/e/protoman_running_animation_test_by_gregarlink10-d5q2i5x.gif">
 </div>
