@@ -26,11 +26,13 @@
         .wrap {width:900px; margin: 0 auto; text-align: center;}
         h1 {color: antiquewhite; font-family: Helvetica; font-weight: 100; background: rebeccapurple;}
         h2 {color: antiquewhite;  background: #EC7062; opacity: 1;}
-        h4 {
-            text-shadow:#7a7a7a 4px 3px 0;
-            color:floralwhite; whitesmoke; font-weight: 100;   line-height: 1.2; font-size: 40px; padding: 20px; margin-top: 0; margin-bottom: -20px;}
+        h6 {color: antiquewhite;  opacity: 1; font-size: 30px;}
+
+        h4 {text-shadow:#7a7a7a 4px 3px 0; color:floralwhite; whitesmoke; font-weight: 100;   line-height: 1.2; font-size: 40px; padding: 20px; margin-top: 0; margin-bottom: -20px;}
         .maingif {display: inline-block; transition: transform 2s;}
         .maingif:hover {transform: rotate(360deg);}
+        .quote {color:whitesmoke; font-size: 25px; font-weight: 100; background: #1467FF; width:300px; height: 60px; border-radius: 10px; padding-top: 14px;
+        display: block; margin: 0 auto;}
         .video {
             background: url(http://1.bp.blogspot.com/-99hAkzwg6Jg/UpYo987v8LI/AAAAAAAAAvY/13kuqe_Civk/s1600/make-vlc-look-like-winamp.png) no-repeat center center;
             -webkit-background-size: cover;
@@ -42,6 +44,7 @@
 
 
         }
+
         .image {height:100%;}
 
         .image img {border: 20px bisque solid; border-radius: 10px; width: 100%;
@@ -182,7 +185,30 @@
         }
         */
     </script>
-<img style="margin-top: 40px;" src="http://vignette2.wikia.nocookie.net/piposh/images/9/91/%D7%9E%D7%A8%D7%92'.gif/revision/latest?cb=20090721140521&path-prefix=he">
+<img style="margin-top: 40px; margin-bottom: -10px;" src="http://vignette2.wikia.nocookie.net/piposh/images/9/91/%D7%9E%D7%A8%D7%92'.gif/revision/latest?cb=20090721140521&path-prefix=he">
+
+
+
+    <div class="quote">
+
+
+        <script>
+            var quotebox = document.querySelector(".quote");
+            var quoteT = document.createElement("h5");
+            quotebox.appendChild(quoteT);
+
+            quoteSelect = Math.floor(Math.random() * 6) + 1;
+            if (quoteSelect < 3) {
+                quotebox.innerText = "Zakroy Dver!!!";
+
+            }
+            else {
+                quotebox.innerText = "Saraaaaay!!!!!!";
+
+            }
+
+        </script>
+    </div>
 </div>
 </body>
 </html>
