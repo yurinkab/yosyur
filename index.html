@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body { background:url("https://i.ytimg.com/vi/SiSXDEIu3GI/maxresdefault.jpg");}
+        .wrap {width:900px; margin: 0 auto; text-align: center;}
+        h1 {color: antiquewhite; font-family: Helvetica; font-weight: 100; background: rebeccapurple;}
+        h2 {color: darksalmon; font-family: Serif; background: cadetblue;}
+        .video {
+            background: url(http://tong.visitkorea.or.kr/cms/resource/87/1735587_image2_1.JPG) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height:450px;
+            margin-bottom: 50px;
+        }
+        .image {height:500px;}
+        .maingif { margin-bottom: 30px;}
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="maingif"><img src="http://rs680.pbsrc.com/albums/vv169/SwInEfLuu04/megawave1ui.gif~c200"></div>
+    <div id="main">
+    </div>
+
+
+    <script>
+        var main = document.querySelector("#main");
+        var title = document.createElement("h1");
+        var subtitle = document.createElement("h2");
+        var videobox = document.createElement("div");
+        var imagebox = document.createElement("div");
+        videobox.setAttribute("class", "video");
+        imagebox.setAttribute("class", "image");
+        title.innerText = "HELLO!";
+        main.appendChild(title);
+        main.appendChild(videobox);
+        main.appendChild(subtitle);
+        main.appendChild(imagebox);
+
+
+        var count = Math.floor(Math.random() * 6) + 1;
+        var imagecount = Math.floor(Math.random() * 6) + 1;
+
+
+        if (imagecount == 1)
+        {
+            imagebox.innerHTML = '<img src="http://www.matsmatsmats.com/images/kids/streets/LC206-city-life-xl.jpg">';
+
+        }
+        else if (imagecount == 2){
+            imagebox.innerHTML = '<img src="http://wizzywizzyweb.gmgcdn.com/media/products/mortal-kombat-arcade-kollection/screenshots/large-1_-640x350.jpg">';
+
+        }
+
+        else if (imagecount == 3){
+            imagebox.innerHTML = '<img src="https://333sound.files.wordpress.com/2015/09/metallica-black-album.jpg">';
+
+        }
+
+
+        else {
+
+            imagebox.innerHTML = '<img src="http://i.imgur.com/jfoGryR.jpg?1">';
+
+        }
+
+        if(count == 1) {
+            title.innerText = "Nostalgic Video: Ayla - Toucher Mix";
+            videobox.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/37IbGnxwvzM" frameborder="0" allowfullscreen></iframe>';
+            subtitle.innerText = "Nostalgic Photo";
+        }
+
+        else if(count == 2) {
+            title.innerText = "Nostalgic Video: Tocas Miracle";
+            videobox.innerHTML = '<iframe width="420" height="315" src="https://www.youtube.com/embed/dvzc-TT4Xec" frameborder="0" allowfullscreen></iframe>';
+            subtitle.innerText = "Nostalgic Photo";
+
+        }
+
+        else if(count == 3) {
+            title.innerText = "Nostalgic Video: Faithless - God is a Dj";
+            videobox.innerHTML = '<iframe width="420" height="315" src="https://www.youtube.com/embed/oZJBqhft1CU" frameborder="0" allowfullscreen></iframe>';
+            subtitle.innerText = "Nostalgic Photo";
+
+        }
+
+        else if(count == 4) {
+            title.innerText = "Nostalgic Video: Darude SandStorm";
+            videobox.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/y6120QOlsfU" frameborder="0" allowfullscreen></iframe>';
+            subtitle.innerText = "Nostalgic Photo";
+
+        }
+
+        else if(count == 5) {
+            title.innerText = "Three Drives On A Vinyl - Greece 2000";
+            videobox.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/V3QfixzgScw" frameborder="0" allowfullscreen></iframe>';
+            subtitle.innerText = "Nostalgic Photo";
+            imagebox.innerHTML = '<img src="http://cdn.puckermob.com/articlesites/puckermob/large/4525_tall.jpg">';
+
+        }
+
+        else {
+            title.innerText = "Nostalgic Video: Ayla - Toucher Mix";
+            videobox.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/37IbGnxwvzM" frameborder="0" allowfullscreen></iframe>';
+            subtitle.innerText = "Nostalgic Photo";
+            imagebox.innerHTML = '<img src="http://cdn.puckermob.com/articlesites/puckermob/large/4525_tall.jpg">';
+
+        }
+
+        $(window).scroll(function(){
+            $(".video").css("opacity", 1 - $(window).scrollTop() / 1000);
+        });
+    </script>
+</div>
+</body>
+</html>
