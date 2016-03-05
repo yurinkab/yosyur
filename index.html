@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600|Montserrat' rel='stylesheet' type='text/css'>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900);
-        body {  font-family: 'Alegreya Sans SC', sans-serif;
+
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+
+
+        body {font-family: 'Montserrat', sans-serif;
             background:url("http://1cv4y131sweukg8sr2f7vd57.wpengine.netdna-cdn.com/wp-content/uploads/windows-xp-desktop-background-wallpaper-vortec-space-800x600.jpg") no-repeat fixed;
         background-size: cover; font-size:1em;}
         .wrap {width:900px; margin: 0 auto; text-align: center;}
         h1 {color: antiquewhite; font-family: Helvetica; font-weight: 100; background: rebeccapurple;}
         h2 {color: antiquewhite;  background: #EC7062; opacity: 1;}
-        h4 {color: whitesmoke;   line-height: 0.9; display: inline-block; font-size: 40px; padding: 20px; margin-top: 0px; margin-bottom: -20px;}
+        h4 { color:floralwhite;background-color:color: whitesmoke; font-weight: 100;   line-height: 1.2; font-size: 30px; padding: 20px; margin-top: 0px; margin-bottom: -20px;}
         .maingif {display: inline-block; transition: transform 2s;}
         .maingif:hover {transform: rotate(360deg);}
         .video {
@@ -24,10 +34,11 @@
             height:450px;
             margin-bottom: 50px;
 
+
         }
-        .image {height:500px;
-        }
-        .image img {border: 20px bisque solid; border-radius: 10px;
+        .image {height:100%;}
+
+        .image img {border: 20px bisque solid; border-radius: 10px; width: 100%;
 
         }
         .maingif { margin-bottom: 30px;}
@@ -37,7 +48,7 @@
             body {
                 background-image: url(http://www.hope.co.nz/projects/stars/stars_ss_31.jpg);
             }
-            h4{font-size:30px; display: block;}
+            h4{font-size:25px; display: block;}
 .wrap {width:100%;}
 
             .video {background-image: none; margin-left: -365px; margin-bottom: -60px;}
@@ -56,7 +67,7 @@
 <body>
 
 <div class="wrap">
-<h4><span style="color:lightyellow; font-weight: 100;">Down the memory Lane:</span><br>Yossi's and Yuri's good stuff Collection</h4>
+<h4><span style="color:lightyellow; font-weight: 500;"><b>Down the memory Lane:</b></span><br>Yossi's and Yuri's good stuff Collection</h4>
     <div class="maingif" onclick="nextsong()"><img src="http://rs680.pbsrc.com/albums/vv169/SwInEfLuu04/megawave1ui.gif~c200"></div>
     <div id="main">
     </div>
@@ -111,48 +122,48 @@
         if(count == 1) {
             title.innerText = "Nostalgic Video: Ayla - Toucher Mix";
             videobox.innerHTML = '<span style="margin-left: 365px;"><iframe width="525" height="351" src="https://www.youtube.com/embed/37IbGnxwvzM?autoplay=1" frameborder="0" allowfullscreen></iframe></span>';
-            subtitle.innerText = "Nostalgic Photo";
+            subtitle.innerText = "Nostalgic Image";
         }
 
         else if(count == 2) {
             title.innerText = "Nostalgic Video: Tocas Miracle";
             videobox.innerHTML = '<span style="margin-left: 365px;"><iframe width="525" height="351" src="https://www.youtube.com/embed/dvzc-TT4Xec?autoplay=1" frameborder="0" allowfullscreen></iframe></span>';
-            subtitle.innerText = "Nostalgic Photo";
+            subtitle.innerText = "Nostalgic Image";
 
         }
 
         else if(count == 3) {
             title.innerText = "Nostalgic Video: Craig David - Walking away";
             videobox.innerHTML = '<span style="margin-left: 365px;"><iframe width="525" height="351" src="https://www.youtube.com/embed/4lxRRCxfRvI?autoplay=1;showinfo=0" frameborder="0" allowfullscreen></iframe></span>';
-            subtitle.innerText = "Nostalgic Photo";
+            subtitle.innerText = "Nostalgic Image";
 
         }
 
         else if(count == 4) {
             title.innerText = "Nostalgic Video: Darude SandStorm";
             videobox.innerHTML = '<span style="margin-left: 365px;"><iframe width="525" height="351" src="https://www.youtube.com/embed/y6120QOlsfU?autoplay=1" frameborder="0" allowfullscreen></iframe></span>';
-            subtitle.innerText = "Nostalgic Photo";
+            subtitle.innerText = "Nostalgic Image";
 
         }
 
         else if(count == 5) {
             title.innerText = "Three Drives On A Vinyl - Greece 2000";
             videobox.innerHTML = '<span style="margin-left: 365px;"><iframe width="525" height="351" src="https://www.youtube.com/embed/V3QfixzgScw?autoplay=1" frameborder="0" allowfullscreen></iframe></span>';
-            subtitle.innerText = "Nostalgic Photo";
+            subtitle.innerText = "Nostalgic Image";
 
         }
 
         else if(count == 6) {
             title.innerText = "Bomfunk MC's - Freestyler";
             videobox.innerHTML = '<span style="margin-left: 365px;"><iframe width="525" height="351" src="https://www.youtube.com/embed/ymNFyxvIdaM?autoplay=1;showinfo=0" frameborder="0" allowfullscreen></iframe></span>';
-            subtitle.innerText = "Nostalgic Photo";
+            subtitle.innerText = "Nostalgic Image";
 
         }
 
         else {
             title.innerText = "Nostalgic Video: Ayla - Toucher Mix";
             videobox.innerHTML = '<span style="margin-left: 365px;"><iframe width="525" height="351" src="https://www.youtube.com/embed/37IbGnxwvzM?autoplay=1" frameborder="0" allowfullscreen></iframe></span>';
-            subtitle.innerText = "Nostalgic Photo";
+            subtitle.innerText = "Nostalgic Image";
 
         }
 
